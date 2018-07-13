@@ -13,13 +13,6 @@
 '''
 
 VLANS = [10, 20, 30, 1, 2, 100, 10, 30, 3, 4, 10]
-
-In : VLANS = list(set(VLANS))
-
-In : VLANS
-Out: [1, 2, 3, 100, 4, 10, 20, 30]
-
-In : VLANS.sort()
-
-In : VLANS
-Out: [1, 2, 3, 4, 10, 20, 30, 100]
+VLANS = list(set(VLANS))
+VLANS.sort()
+VLANS

@@ -9,6 +9,4 @@
 '''
 
 MAC = 'AAAA:BBBB:CCCC'
-
-In:  MAC.replace(':', '.')
-Out: 'AAAA.BBBB.CCCC
+MAC.replace(':', '.')

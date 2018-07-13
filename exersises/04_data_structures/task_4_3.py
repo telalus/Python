@@ -10,11 +10,8 @@
 '''
 
 CONFIG = 'switchport trunk allowed vlan 1,3,10,20,30,100'
-In: conf=CONFIG.split()
-
-In: conf
-Out: ['switchport', 'trunk', 'allowed', 'vlan', '1,3,10,20,30,100']
-
-In: vlans
-Out: ['1', '3', '10', '20', '30', '100']
-
+conf=CONFIG.split()
+#['switchport', 'trunk', 'allowed', 'vlan', '1,3,10,20,30,100']
+vlans = conf[-1].split(',')
+vlans
+#['1', '3', '10', '20', '30', '100']

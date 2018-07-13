@@ -19,26 +19,13 @@
 '''
 
 IP = '192.168.3.1'
-
-In [291]: ip = IP.split('.')
-
-In [292]: ip
-Out[292]: ['192', '168', '3', '1']
-
-In [296]: ip0=int(ip[0])
-
-In [297]: ip1=int(ip[1])
-
-In [298]: ip2=int(ip[2])
-
-In [299]: ip3=int(ip[3])
-
-In [318]: ip_template = '''
-     ...: {:10} {:10} {:10} {:10}
-     ...: {:10b} {:10b} {:10b} {:10b}
-     ...: '''
-In [321]: print(ip_template.format(i1, i2, i3, i4, i1, i2, i3, i4))
-
-192        168        3          1
-11000000   10101000   11         1
-
+ip = IP.split('.')
+ip0=int(ip[0])
+ip1=int(ip[1])
+ip2=int(ip[2])
+ip3=int(ip[3])
+ip_template = '''
+{:10} {:10} {:10} {:10}
+{:10b} {:10b} {:10b} {:10b}
+'''
+print(ip_template.format(i1, i2, i3, i4, i1, i2, i3, i4))
