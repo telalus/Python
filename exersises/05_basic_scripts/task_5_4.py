@@ -17,3 +17,17 @@ num_list = [10, 2, 30, 100, 10, 50, 11, 30, 15, 7]
 word_list = [
     'python', 'ruby', 'perl', 'ruby', 'perl', 'python', 'ruby', 'perl'
 ]
+
+number = int(input('Enter number from list (2,7,10,11,15,30,50,100): '))
+word = input('\nEnter word from list (python,ruby,perl): ')
+
+num_reverse = num_list.copy()
+num_reverse.reverse()
+num = len(num_list) - (num_reverse.index(number) + 1)
+
+word_reverse = word_list.copy()
+word_reverse.reverse()
+wrd = len(word_list) - (word_reverse.index(word) + 1)
+
+print('\nПоследний раз ваше число встречается под индексом {}'.format(num))
+print("\nПоследний раз ваше слово встречается под индексом {}".format(wrd))
